@@ -1,0 +1,26 @@
+.AppButton {
+  color: var(--primary);
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 0.25rem 1.25rem;
+  border-color: var(--primary) !important;
+
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.AppButton.Light {
+  &, &:active {
+    color: var(--primary) !important;
+    background-color: transparent !important;
+  }
+}
+
+.AppButton.Dark {
+  &, &:active {
+    color: var(--light) !important;
+    background-color: var(--primary) !important;
+  }
+}

@@ -1,0 +1,35 @@
+.Wrapper {
+  padding: 1rem 0;
+
+  @media (min-width: 991px) {
+    height: var(--footer-height);
+  }
+
+  .SocialLinks {
+    display: flex;
+
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+
+    .Link {
+      color: var(--text-default);
+      padding: 0.5rem;
+      margin: 0 1rem;
+      transition: 0.2s color;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: var(--primary);
+        text-decoration: none;
+      }
+    }
+  }
+}

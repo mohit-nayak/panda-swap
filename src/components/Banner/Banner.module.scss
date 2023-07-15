@@ -1,0 +1,105 @@
+.Wrapper {
+  padding: 1rem 0;
+
+  @media (min-width: 991px) {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - calc(var(--nav-height) + var(--footer-height)));
+  }
+
+  .Row {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .BannerImage {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+
+    @media (max-width: 991px) {
+      width: 300px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .ContentContainer {
+    @media (max-width: 991px) {
+      max-width: 600px;
+      text-align: center;
+      display: block;
+      margin: auto;
+    }
+
+    .Title {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .Subtext {
+      max-width: 400px;
+      padding-top: 0.75rem;
+
+      @media (max-width: 991px) {
+        margin: auto;
+      }
+    }
+
+    .Rewards {
+      display: flex;
+      padding: 1rem 0;
+
+      @media (max-width: 991px) {
+        justify-content: center;
+      }
+
+      .Item {
+        padding: 1rem;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      .Key {
+        margin-bottom: 0;
+        color: var(--primary);
+        font-size: 0.75rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+      }
+
+      .Value {
+        font-weight: 700;
+        color: var(--primary);
+      }
+    }
+  }
+
+  .MidBold {
+    font-weight: 700;
+  }
+
+  .ActionBtn {
+    margin-right: 2rem;
+    transform: translateY(0);
+    transition: 0.25s all;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  .FaqLink {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+}
